@@ -183,7 +183,7 @@ header .navbar nav{
     margin: auto;
     display: flex;
     justify-content: space-between;
-    width: 1400px;
+    max-width: 1400px;
 }
 header .navbar nav ul{
     display: flex;
