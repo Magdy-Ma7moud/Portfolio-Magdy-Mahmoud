@@ -10,8 +10,6 @@
     
 </head>
 <body>
-  
-
     <header id="home">
     <div class="navbar">  
     <nav>
@@ -21,6 +19,14 @@
         <li><a href="#about">about</a></li>
         <li><a href="#Scills">skills</a></li>
         <li><a href="#contact">contact</a></li>
+        <div>
+          <input type="checkbox" class="checkbox" id="checkbox">
+          <label for="checkbox" class="checkbox-label">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+            <span class="ball"></span>
+          </label>
+        </div>
     </ul>
     </nav>
     </header>
@@ -48,6 +54,7 @@
 <section id="about">
     <div class="container">
         <h2>About Me</h2>
+
         <hr>
         <div class="about-content">
             <div class="col-1">
@@ -127,7 +134,7 @@
                     <span>What is your request</span>
                   </div>
                   <div class="input-box">
-                    <input type="submit" value="Send" name="submit" >
+                    <input type="submit" value="Send ➤" name="submit" >
                   </div>
         
                 </form>
@@ -139,65 +146,8 @@
 </section>
   </div>
   <button class="scrollToTopBtn"><i class="fa-solid fa-angle-up"></i></button>
+ 
   
-  <div class="carousell">
-    <div style="padding-bottom: 1%;" class="carousel-title">
-      <h2>Latest Designs  <i class="fa-solid fa-wand-magic-sparkles" style="font-size: 35px;"></i> </h2>
-      <hr>
-    </div>
-    <div class="carousel">
-      <ul class="slides">
-        <input type="radio" name="radio-buttons" id="img-1" checked />
-        <li class="slide-container">
-          <div class="slide-image">
-            <img src="Starbucks-website.PNG">
-          </div>
-          <div class="carousel-controls">
-            <label for="img-3" class="prev-slide">
-              <span>&lsaquo;</span>
-            </label>
-            <label for="img-2" class="next-slide">
-              <span>&rsaquo;</span>
-            </label>
-          </div>
-        </li>
-        <input type="radio" name="radio-buttons" id="img-2" />
-        <li class="slide-container">
-          <div class="slide-image">
-            <img src="avatar-website.png">
-          </div>
-          <div class="carousel-controls">
-            <label for="img-1" class="prev-slide">
-              <span>&lsaquo;</span>
-            </label>
-            <label for="img-3" class="next-slide">
-              <span>&rsaquo;</span>
-            </label>
-          </div>
-        </li>
-        <input type="radio" name="radio-buttons" id="img-3" />
-        <li class="slide-container">
-          <div class="slide-image">
-            <img src="Vedross.png">
-          </div>
-          <div class="carousel-controls">
-            <label for="img-2" class="prev-slide">
-              <span>&lsaquo;</span>
-            </label>
-            <label for="img-1" class="next-slide">
-              <span>&rsaquo;</span>
-            </label>
-          </div>
-        </li>
-        <div class="carousel-dots">
-          <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
-          <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
-          <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
-        </div>
-      </ul>
-    </div>
-  </div>
-
   <footer>
     <div class="footer">
     <div class="row2">
@@ -233,6 +183,10 @@
     }
     scrollToTopBtn.addEventListener("click", scrollToTop)
     document.addEventListener("scroll", handleScroll)
+    const checkbox = document.getElementById("checkbox")
+checkbox.addEventListener("change", () => {
+  document.body.classList.toggle("dark")
+})
     </script>
 </body>
 </html>
