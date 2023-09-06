@@ -368,6 +368,7 @@ transform: translateX(-80px) scale(0.9);
  }
  #Scills{
     background-color: #033b4a; 
+    border-radius: 10px;
 padding-top: 10rem;
 padding-bottom: 10rem;
 }
@@ -411,21 +412,18 @@ padding-bottom: 10rem;
 }
 #contact{
     padding: 4rem 0;
-    background-color: whitesmoke;
  }
  #contact .row {
     margin-top: 4rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
-    background-color: white;
     box-shadow: 3px 3px 20px rgb(0,0,0,0.3);
     padding: 2rem 3rem ;
     border-radius: 10px;
  }
 
  .contact-form {
-    background-color: #fff;
     padding: 40px;
     width: 90%;
     padding-bottom: 20px;
@@ -436,7 +434,6 @@ padding-bottom: 10rem;
     font-weight: bold;
     font-size: 40px;
     margin-bottom: 10px;
-    color: black;
   }
   
   .contact-form .input-box {
@@ -454,6 +451,9 @@ padding-bottom: 10rem;
     border-bottom: 2px solid #333;
     outline: none;
     resize: none;
+    color: rgb(60, 103, 227); 
+    font-weight: 600;
+    background-color: transparent;
   }
   
   .contact-form .input-box span {
@@ -485,162 +485,86 @@ padding-bottom: 10rem;
     padding: 10px;
     font-size: 18px;
     transition: 0.3s;
-    border: 2px solid black;
+    border: 2px solid white;
     border-radius: 5px;
 
   }
   
   .contact-form .input-box input[type="submit"]:hover
   {
-    background: transparent;
-    color: black;
-    border: 2px solid black;
-    font-size: 20px;
     border-radius: 10px;
+    scale: 1.1;
     
   }
-  .work-hours{
-    position: relative;
-    bottom: 50px;
-    left: 50px;
-    width:60px;
-    transition: all .2s;
-
-}
-   
-  .work-hours:hover{
-    scale: 1.2;
-  }
-  .carousel {
-    margin-left: 15%;
-    margin-right: 15%;
-    padding-bottom:10%;
-}
-
-ul.slides {
-    display: block;
-    position: relative;
-    height: 600px;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    list-style: none;
-}
-
-.slides * {
-    user-select: none;
-    -ms-user-select: none;
-    -moz-user-select: none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    -webkit-touch-callout: none;
-}
-
-ul.slides input {
-    display: none; 
-}
-
-
-.slide-container { 
-    display: block; 
-}
-
-.slide-image {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    opacity: 0;
-    transition: all .7s ease-in-out;
-}   
-
-.slide-image img {
-    width: auto;
-    min-width: 100%;
-    height: 100%;
-}
-
-.carousel-controls {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 999;
-    font-size: 100px;
-    line-height: 600px;
-    color: #fff;
-}
-
-.carousel-controls label {
-    display: none;
-    position: absolute;
-    padding: 0 20px;
-    opacity: 0;
-    transition: opacity .2s;
-    cursor: pointer;
-}
-
-.slide-image:hover + .carousel-controls label{
-    opacity: 0.5;
-}
-
-.carousel-controls label:hover {
-    opacity: 1;
-}
-
-.carousel-controls .prev-slide {
-    width: 49%;
-    text-align: left;
-    left: 0;
-}
-
-.carousel-controls .next-slide {
-    width: 49%;
-    text-align: right;
-    right: 0;
-}
-
-.carousel-dots {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 20px;
-    z-index: 999;
-    text-align: center;
-}
-
-.carousel-dots .carousel-dot {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: #fff;
-    opacity: 0.5;
-    margin: 10px;
-}
-
-input:checked + .slide-container .slide-image {
-    opacity: 1;
-    transform: scale(1);
-    transition: opacity 1s ease-in-out;
-}
-
-input:checked + .slide-container .carousel-controls label {
-     display: block; 
-}
-
-input#img-1:checked ~ .carousel-dots label#img-dot-1,
-input#img-2:checked ~ .carousel-dots label#img-dot-2,
-input#img-3:checked ~ .carousel-dots label#img-dot-3,
-input#img-4:checked ~ .carousel-dots label#img-dot-4,
-input#img-5:checked ~ .carousel-dots label#img-dot-5,
-input#img-6:checked ~ .carousel-dots label#img-dot-6 {
-	opacity: 1;
-}
 
 
 input:checked + .slide-container .nav label { display: block; }
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #fff;
+    transition: background 0.2s linear;
+  }
+  
+  body.dark {
+    background-color: rgba(0, 0, 0, 0.900); color: #fff;} /* #9b59b6 */
+  
+  body.dark h1, body.dark .support a {color: #fff;}
+  
+  .checkbox {
+    opacity: 0;
+    position: absolute;
+  }
+  
+  .checkbox-label {
+    background-color: rgb(58, 58, 58);
+    width: 50px;
+    height: 26px;
+    border-radius: 50px;
+    position: relative;
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .fa-moon {color: white;}
+  
+  .fa-sun {color: rgb(176, 115, 0);}
+  
+  .checkbox-label .ball {
+    background-color: black;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+  }
+  
+  .checkbox:checked + .checkbox-label .ball {
+    transform: translateX(24px);
+  }
+  
+  /*  Support me if you like it */
+  .support {
+      position: absolute;
+      right: 20px;
+      bottom: 20px;
+  }
+  
+  .support a {
+    color: #292c35;
+    font-size: 32px;
+    backface-visibility: hidden;
+    display: inline-block;
+    transition: transform 0.2s ease;
+  }
+  
+  .support a:hover{
+    transform: scale(1.1);
+  }
 
 
 @media  (max-width:768px){
@@ -730,7 +654,7 @@ font-size: 18px;
  }
     
 }
-@media (max-width:580px){
+@media (max-width:600px){
     .footer .row2{
         font-size: 10px;
     }
@@ -791,10 +715,16 @@ margin-top: 4rem;
 padding-top: 12rem;
 
 }
+header .navbar{
+    padding: .9rem 1rem;
+}
 header .navbar nav ul{
 display: flex;
 justify-content: center;
-align-items: center;}
+align-items: center;
+font-size: 12px;
+
+}
 #contact .row{
 width: 100%;
 padding-right: 20px;
