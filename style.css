@@ -751,11 +751,7 @@ margin: auto;
 
 }
 .card{
-        width: 300px;
         height: 34vh;
-        padding-bottom: 5px;
-        top: 10px;
-        right: 100px;
 }
 
 }
@@ -778,11 +774,11 @@ margin: auto;
     .home1{
 position: absolute;
 }
-    .card{
+     .card{
    width: 300px;
    padding-bottom: 5px;
-   top: 10px;
-   right: 40px;
+   top: -9px;
+   right: 12px;
     }
     #home #logo{
         font-size: 14.3px;
