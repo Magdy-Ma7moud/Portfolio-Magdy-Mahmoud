@@ -682,7 +682,7 @@ font-size: 18px;
     
 }
 @media (max-width:600px){
-    header .navbar nav ul a:hover {
+    body.dark header .navbar nav ul a:hover {
         font-size: 11px;
         color: #fff;
         }
