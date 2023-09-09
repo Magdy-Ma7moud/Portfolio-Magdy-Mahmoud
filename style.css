@@ -204,7 +204,10 @@ header .navbar nav ul a {
 }
 header .navbar nav ul a:hover {
 font-size: 22px;
-color: #fff;
+color: #000;
+}
+body.dark .navbar nav ul a:hover{
+    color: #fff;
 }
 @property --rotate {
     syntax: "<angle>";
