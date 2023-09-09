@@ -206,7 +206,7 @@ header .navbar nav ul a:hover {
 font-size: 22px;
 color: #000;
 }
-body.dark nav a:hover{
+body.dark header .navbar nav ul a:hover {
     color: #fff;
 }
 @property --rotate {
