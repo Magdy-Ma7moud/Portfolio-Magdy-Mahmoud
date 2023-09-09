@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Magdy Mahmoud</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     
 </head>
@@ -57,9 +58,7 @@
      <a href="#about"><div class="icon-scroll"></div></a>
      <div>
     </div>
-
-
-<section id="about">
+<section id="about" data-aos="fade-up"  data-aos-duration="2000">
     <div class="container">
         <h2>About Me</h2>
 
@@ -82,31 +81,31 @@
 </section>
 <section id="Scills">
     <div class="container">
-        <h2><i class="fa-solid fa-laptop-code"></i> skills &amp; <span>Abilities</span></h2>
+        <h2 data-aos="fade-right"  data-aos-duration="1000"><i class="fa-solid fa-laptop-code"></i> skills &amp; <span>Abilities</span></h2>
         <hr>
         <div class="skills-content">
             <div class="row">
-                <div class="item">
+                <div class="item" data-aos="fade-right">
                     <img src="html.png" alt="HTML">
                     <p>HTML</p>
                 </div>
-                <div class="item">
+                <div class="item" data-aos="fade-up">
                     <img src="css-3.png" alt="CSS">
                     <p>CSS</p>
                 </div>
-                <div class="item">
+                <div class="item" data-aos="fade-down">
                     <img src="javascript-39417.png" alt="JavaScript">
                     <p>JavaScript</p>
                 </div>
-                <div class="item">
+                <div class="item" data-aos="fade-up">
                   <img src="bootstrap.png" alt="bootstrap">
                   <p>Bootstrap</p>
               </div>
-              <div class="item">
+              <div class="item" data-aos="fade-down">
                 <img src="wordpress.png" alt="wordpress">
                 <p>Wordpress</p>
             </div>
-            <div class="item">
+            <div class="item" data-aos="fade-right">
               <img src="github.png" alt="github">
               <p>Github</p>
           </div>
@@ -116,7 +115,7 @@
         </div>
     </div>
 </section>
-<section id="contact">
+<section id="contact" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" >
     <div class="container">
         <h2>
             <i class="fa-solid fa-headset"></i>  Get In <span>Touch </span>
@@ -197,6 +196,9 @@ checkbox.addEventListener("change", () => {
   document.body.classList.toggle("dark")
 })
     </script>
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
