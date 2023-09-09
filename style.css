@@ -4,10 +4,9 @@
     font-family: sans-serif;
     box-sizing: border-box;    
 }
-
-
-
-
+  #contact .row img{
+border-radius: 10px;
+  }
 .scrollToTopBtn:hover{
     background-color: #000;
 }
