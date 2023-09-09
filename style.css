@@ -146,8 +146,7 @@ header{
 }
 
 header .navbar {
-    border-bottom: 1px solid black;
-    background-color: #000;
+    background-color: white;
     position: fixed;
     width: 100%;
     padding: 1.5rem 1rem;
@@ -460,7 +459,7 @@ padding-bottom: 10rem;
     border-bottom: 2px solid #333;
     outline: none;
     resize: none;
-    color: rgb(60, 103, 227); 
+    color:#000; 
     font-weight: 600;
     background-color: transparent;
   }
@@ -518,7 +517,23 @@ body {
     background-color: rgba(0, 0, 0, 0.900); color: #fff;} /* #9b59b6 */
   
   body.dark h1, body.dark .support a {color: #fff;}
+  body.dark header .navbar{
+    background-color: #000;
+  }
+  body.dark .contact-form .input-box input,
+  body.dark .contact-form .input-box textarea{
+    color: #fff;
+    border-bottom: 2px solid #fff;
+   
+  }
+  body.dark .contact-form .input-box span{
+   color: #d3d3d3;
+  }
+  body.dark .contact-form .input-box input:focus ~ span,
+  .contact-form .input-box textarea:focus ~ span{
+  color: #e91e63;
   
+  }
   .checkbox {
     opacity: 0;
     position: absolute;
