@@ -428,9 +428,12 @@ padding-bottom: 10rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
-    box-shadow: 3px 3px 20px rgb(0,0,0,0.3);
+    box-shadow: 3px 3px 20px rgb(0,0,0,0.80);
     padding: 2rem 3rem ;
     border-radius: 10px;
+ }
+body.dark #contact .row {
+    box-shadow: 3px 3px 20px rgba(255, 255, 255, 0.50);
  }
 
  .contact-form {
