@@ -232,7 +232,7 @@ body.dark header .navbar nav ul a:hover {
   }
 
   .footer{
-    background:#000;
+    background: linear-gradient(#022e3a, #000);
     padding:30px 0px;
     font-family: 'Play', sans-serif;
     text-align:center;
