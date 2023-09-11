@@ -4,6 +4,31 @@
     font-family: sans-serif;
     box-sizing: border-box;    
 }
+::-webkit-scrollbar{
+    width: 9px;
+}
+body.dark::-webkit-scrollbar-track{
+    background-color: darkgray;
+
+}
+
+
+body.dark::-webkit-scrollbar-track{
+    background-color: black;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 50px;
+    background: darkgray;
+}
+
+body.dark::-webkit-scrollbar-thumb:hover{
+    background: white;
+
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color:rgb(106, 106, 106);
+}
+
   #contact .row img{
 border-radius: 10px;
   }
